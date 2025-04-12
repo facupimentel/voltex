@@ -1,0 +1,33 @@
+
+%profes {
+    background-color: $color-principal;
+    color: whitesmoke;
+    padding: 5px;
+    text-align: start;
+    border-radius: 2px;
+}
+
+%grid-galeria {
+    margin: 0px 10px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 33%) ;
+    gap: 5px;
+}
+
+%texto-rutinas {
+    background-color: $color-principal;
+    color: whitesmoke;
+    margin: 20px 5px; 
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+%rutina-td {
+    background-color: $color-principal;
+    border: 0.5px solid $color-principal;
+    color: whitesmoke;
+    padding: 9px;
+    font-size: 12px; 
+}

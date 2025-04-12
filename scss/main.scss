@@ -1,0 +1,731 @@
+//SASS PRINCIPAL
+//mobile first
+
+//import utilidades
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+//reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//body
+
+body{
+    background-color: rgb(255, 255, 255) ;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: 100;
+}
+
+//banner principal
+
+header {
+    background-color: #242424;
+    .bg-navbar {
+        .container-fluid{
+            .nav-menu {
+                .bg-navbar{ 
+                     background-color: #242424;
+                     a:hover {
+                        background-color: $color-secundario;
+                        color: #242424;
+                     }
+                     a:active{
+                        background-color: $color-alternativo;
+                     }
+                }
+                .navbar-nav {
+                    margin: 0px 20px;
+                    gap: 15px;
+                }
+            }
+
+            .navbar-logo{
+                width: 80%;
+                img{
+                    width: 30%;
+                }
+            }
+        }    
+        
+    }
+}
+
+
+/* CUERPO PRINCIPAL*/
+
+main {
+    text-align: center;
+    .box-one{
+        .texto{
+            @include estilos (40px 10px, 3px, 17px);
+            background-color: $color-principal;
+            color: whitesmoke;
+            padding: 15px;
+
+            h1 {
+                color: $color-secundario;
+            }
+        }
+
+        .grid-img {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 34%);
+            margin: 0px 20px;
+            height: 90vh;
+
+            div {
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 2px;
+                }
+            }
+
+            .img-uno{
+                grid-column: 1;
+                grid-row: span 3;
+            }
+
+            .img-tres{
+                grid-row: span 2;
+            }
+            
+            .img-cuatro {
+                display: none;
+            }
+
+            .img-cinco {
+                display: none;
+            }
+            .img-seis {
+                display: none;
+            }
+        }
+
+    }
+
+    .links-pages{
+        @include flex-column;
+        align-items: center;
+        border-radius: 2px;
+        margin: 40px 0px;
+    
+        .boxs{
+            div{
+                display: flex;
+                width: 95%;
+                @include estilos (5px 7px, 5px, 0px);
+                background-color: #242424;
+                color: whitesmoke;
+                align-items: center;
+    
+                .link-img{
+                    img {
+                        @include estilos (5px 5px, 5px, 0px);
+                        width: 95%;
+                    }
+                }
+                .link-text {
+                    @include flex-column;
+                    margin-right: 15px;
+                    h2 {
+                        font-size: 14px;
+                    }
+                    
+                    a{
+                        color: white;
+                        font-size: 15px;
+                        width: 60%;
+                        text-decoration: none;
+                        padding: 15px;
+                    }
+    
+                    a:hover {
+                        background-color: $color-secundario;
+                        color: $color-principal;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+    
+
+/* PIE DE PAGINA*/
+
+footer {
+    background-color: $color-principal;
+    color: whitesmoke;
+    text-align: center;
+    height: 40vh;
+
+    h3 {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    div {
+        padding: 10px;
+        margin: 30px 15px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+        font-size: 13px;
+
+        img{
+            padding-top: 25px;
+            width: 50%;
+        }
+
+        a {
+            width: 40%;
+            text-decoration: none;
+            color: $color-secundario;
+        }
+    }
+}
+
+//imports
+@import "html/galeria";
+@import "html/profesores";
+@import "html/rutinas";
+@import "html/contactos";
+
+/* MQ tablets */
+
+@media screen and (min-width:768px){
+
+    /* inicio */
+
+    header {
+        .bg-navbar {
+            .container-fluid{
+                .navbar-logo{
+                    width: 80%;
+                    img{
+                        width: 16%;
+                    }
+                }
+            }    
+            
+        }
+    }
+
+    main {
+        .box-one {
+            .texto{
+                font-size: 15px;
+
+                h1 {
+                    font-size:45px;
+                }
+            }
+
+            .grid-img {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 25%);
+                margin: 0px 20px;
+                height: 90vh;
+
+                .img-tres {
+                    grid-row: span 3;
+                }
+
+                .img-cuatro {
+                    display: block;
+                }
+                
+            }
+        }
+
+        .links-pages {
+            gap: 0px;
+            .boxs {
+                display: flex;
+                justify-content: center;
+                margin: 0px 15px;
+                
+                div {
+                    margin: 10px 10px;
+                    @include flex-column;
+                    width: 73%;
+                    .link-img {
+                        img {
+                            width: 100%;
+                            margin: 12px;
+                        }
+                    }
+    
+                    .link-text{
+                        h2 {
+                            @include estilos (12px 0px, 0px, 15px )
+                        }
+    
+                        a {
+                            @include estilos (30px 0px, 0px, 15px )
+                        }
+                        a:hover {
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    footer {
+        height: 25vh;
+        div {
+            a {
+                img {
+                    padding-top: 10px;
+                    width: 25%;
+                }
+            }
+        }
+
+        div {
+            a {
+                padding: 5px 0px;
+                font-size: 13px;
+            }
+        }
+
+        h3 {
+            font-size: 10px;
+        }
+    }
+
+    /* indumentaria */
+
+    .galeria {
+        .texto {
+            h1 {
+                color:$color-secundario ;
+            }
+            @include estilos (40px 10px, 3px, 15px);
+        }
+        .adidas{
+            .cuadro-uno {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr) ;
+                grid-template-rows: repeat(2, 50%);
+
+                div {
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .cuadro-depaul {
+                    display: block;
+                }
+            }
+
+            .cuadro-dos {
+                .dos-img-cinco {
+                    display: none;
+                }
+            }
+        }
+
+        .nike {
+            .texto {
+                font-size: 15px;
+            }
+
+            img {
+                width: 80%;
+            }
+
+        }
+    }
+
+    /* profesores */
+
+    main {
+        .texto {
+            h1 {
+                color:$color-secundario ;
+            }
+            @include estilos (40px 5px, 3px, 15px);
+        }
+        .cbum {
+            .card-profe {
+                @include flex-center;
+                img {
+                    width: 30%;
+                }
+            }
+        }
+
+        .canelo {
+            .card-profe {
+                @include flex-center;
+                img {
+                    width: 30%;
+                }
+            }
+
+            .fotos-canelo {
+                height: 80vh;
+                margin: 5px 5px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr) ;
+                grid-template-rows: repeat(3, 34%) ;
+                gap: 2px;
+
+                .canelo-uno {
+                    grid-row: span 2;
+                }
+
+                .canelo-tres {
+                    grid-row: span 2;
+                }
+
+            }
+        }
+    }
+
+    /* rutinas */
+
+    main {
+        section {
+            .rutina-uno {
+                .texto {
+                    font-size: 15px;
+                }
+                .tabla-uno {
+                    table {
+                        .dias {
+                            td {
+                                font-size: 30px;
+                            }
+                        }
+
+                        tr {
+                            td {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+            .rutina-dos {
+                .tabla-dos {
+                    table {
+                        .dias {
+                            td {
+                                font-size: 30px;
+                            }
+                        }
+
+                        tr {
+                            td {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* contactos */
+    .contactos {
+        section{
+            .redes {
+                .logos {
+                    display: flex;
+                     div {
+                         a {
+                            img {    
+                                 width: 30%;
+                            }
+                        }
+                     }
+                }
+
+            }
+        }
+
+        .inscripcion {
+            .formulario {
+                padding: 25px;
+                h1 {
+                    padding: 15px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* MQ desktop */
+
+@media screen and (min-width:1280px) {
+    /* inicio */
+    header {
+        .bg-navbar{
+            .container-fluid{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                .navbar-logo{
+                    width: 16%;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .nav-menu {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    main {
+        .box-one {
+            @include flex-center;
+            
+            .texto {
+                width: 60%;
+                font-size: 15px;
+            }
+
+            .grid-img {
+                padding: 15px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 33%);
+                margin: 0px 20px;
+                height: 80vh;
+                .img-uno {
+                    grid-row: 2 / 4;
+                }
+
+                .img-dos {
+                    grid-column: 1 / 3;
+                }
+
+                .img-tres {
+                    grid-row: 2 / 4;
+                }
+                
+                .img-cuatro {
+                    grid-column: span 2;
+                }
+
+                .img-cinco {
+                    display: block;
+                    grid-row: 2 / 4;
+                }
+                .img-seis {
+                    display: block;
+                    grid-row: span 2;
+                }
+            }
+
+        }
+
+        .links-pages {
+            display: flex;
+            flex-direction: row;
+            .boxs {
+                width: 100%;
+                div{ 
+                    width: 90%;
+                    .link-img {
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 40vh;
+        div {
+            a {
+                width: 5%;
+                padding: 10px;
+                img {
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+    /* galeria */
+
+    .galeria {
+        .adidas {
+            .cuadro-uno {
+                display: flex;
+            }
+
+            .cuadro-dos {
+                @include grid;
+
+                .dos-img-dos {
+                    grid-column: span 1;
+                }
+                .dos-img-cinco {
+                    display: block;
+                    grid-column: 4;
+                    grid-row: 1 / 3;
+                }
+            }
+        }
+        .nike {
+            .cuadro-tres {
+                @include grid;
+                .tres-img-uno {
+                    grid-row: span 2;
+                }
+                .tres-img-dos {
+                    grid-row: span 2;
+                }
+                .tres-img-tres {
+                    grid-row: span 2;
+                }
+                .tres-img-cuatro {
+                    grid-column: 4;
+                    grid-row: span 2;
+                }
+            }
+
+            .texto {
+                @include flex-center;
+                p {
+                    padding: 15px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    /* profesores */ 
+
+    main {
+        .cbum {
+            .card-profe {
+                img {
+                    width: 15%;
+                }
+
+            
+            }
+            .fotos-cbum {
+                @include grid-profes;
+            }
+        }
+
+        .canelo {
+           .card-profe {
+            img {
+                width: 15%;
+            }
+           }
+
+           .fotos-canelo {
+            @include grid-profes;
+           }
+            
+        }
+          
+            
+    }
+    
+    /* rutinas */
+
+    main {
+        .rutina-uno {
+            .tabla-uno{
+                table{
+                    .dias{
+                        td {
+                           padding: 5px;
+                        }
+                    }
+                    tr {
+                        td {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .rutina-dos {
+            .tabla-dos{
+                table{
+                    .dias{
+                        td {
+                           padding: 10px;
+                        }
+                    }
+                    tr {
+                        td {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* contactos */
+
+    .contactos {
+
+        section {
+            @include flex-center; 
+            .redes {
+                width: 95%;
+                    .logos {
+                        div {
+                            a {
+                                img {
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+
+        .inscripcion {
+            display: flex;
+            .formulario {
+                width: 65%;
+                @include estilos(20px 0px, 2px, 15px);
+                padding: 25px;
+                h1 {
+                    font-size: 20px; 
+                }
+                form {
+                    height: 90%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+//mixin con parametros
+
+@mixin display ($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin estilos ($margin, $border, $font) {
+    margin:$margin ;
+    border-radius:$border ;
+    font-size:$font ;
+}
+
+
+
+// mixin sin parametros
+
+@mixin banner-galeria {
+    background-color: $color-principal;
+    color: $color-secundario;
+    padding: 15px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin grid {
+    height: 80vh;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(2, 50%) ;
+}
+
+@mixin grid-profes {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(2, 50%)
+}
+
+@mixin texto-rutinas {
+    background-color: #242424;
+    color: whitesmoke;
+    margin: 20px 5px; 
+    border-radius: 2px;
+    font-size: 13px;
+    padding: 5px;
+}

@@ -1,0 +1,58 @@
+/* PAGE CONTACTOS */
+
+.contactos {
+    
+    
+    section {
+        .redes {
+            @include estilos (20px 3px, 3px, 19px);
+            background-color:$color-principal ;
+            box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
+            .logos {
+                display: flex;
+                margin: 13px 0px;
+                div {
+                    a {
+                        img {
+                            width: 55%;
+                            padding-bottom: 40px;
+                        }     
+                    }
+                }
+            }
+        }
+    }
+
+    .inscripcion {
+        @include flex-center;
+        .formulario {
+            width: 98%;
+            align-content: center;
+            background-color: $color-principal;
+            color: $color-secundario;
+            padding: 25px;
+
+            h1 {
+                padding: 10px;
+                font-size: 20px;
+            }
+            
+            form {     
+                @include flex-column;  
+                justify-content: center;
+                .controles {
+                    @include estilos (15px 0px, 20px, 15px);      
+                    padding: 5px;
+                    background-color: #d4d4d4;                                   
+                }
+
+                .boton {
+                    padding: 10px;
+                    background-color:$color-secundario;                        
+                    border-radius: 10px;
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+}

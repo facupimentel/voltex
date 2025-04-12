@@ -1,0 +1,105 @@
+/* PAGE GALERIA */
+.galeria {
+    .texto {
+        h1{
+            background-color: $color-principal;
+            color: $color-secundario;
+            padding: 5px;
+            border-radius: 2px;     
+        }
+        @include estilos(20px 0px, 2px, 17px);
+        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
+    }
+
+    .adidas {
+        .cuadro-uno {
+            img {
+                border-radius: 2px;
+                width: 95%;
+                padding: 5px;
+            }
+
+            .cuadro-depaul {
+                display: none;
+            }
+        }
+        
+        div {
+            h2 {
+                @include estilos(20px 3px, 2px, 20px);
+                @include banner-galeria;
+            }
+        }
+
+        .cuadro-dos {
+            height: 130vh;
+            margin: 0px 10px;
+            @extend %grid-galeria;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 2px;
+            }
+
+            .dos-img-uno {
+                grid-column: 1;
+                grid-row: span 2;
+            }
+
+            .dos-img-cuatro {
+                grid-column: span 2;
+            }
+
+            .dos-img-cinco {
+                display: none;
+            }
+        }
+    }
+
+    div {
+        h2 {
+            box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
+            @include estilos(20px 3px, 2px, 20px);
+            @include banner-galeria;
+        }
+    }
+
+    .nike {
+        .cuadro-tres {
+            height: 100vh;
+            @extend %grid-galeria;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 2px;
+            }
+
+            .tres-img-uno {
+                grid-row: span 3;
+            }
+
+            .tres-img-cuatro {
+                grid-column: 2;
+            }
+        }
+    }
+
+    div {
+        h2 {
+            @include estilos(20px 3px, 2px, 20px);
+            @include banner-galeria;
+        }
+    }
+
+    .texto {
+        font-size: 17px;
+        img {
+            width: 95%;
+            border-radius: 2px;
+        }
+    }
+}
