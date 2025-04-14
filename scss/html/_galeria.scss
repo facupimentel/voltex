@@ -1,20 +1,25 @@
 /* PAGE GALERIA */
 .galeria {
-  .texto {
-    @include estilos(20px 0px, 2px, 17px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: $color-principal;
-    color: $color-secundario;
-    padding: 13px;
-    h1 {
+  .texto{
+      display: flex;
+      flex-direction: column;
+      text-align: start;
       padding: 5px;
-      border-radius: 2px;
-    }
-    p{
-      color: white;
-    }
-
+      h6 {
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: $color-principal;
+      }
+      h1 {
+        font-size: 30px;
+        margin: 25px 0px 5px 0px;
+      }
   }
+
+    
+
   .cards {
     display: flex;
     flex-direction: column;
