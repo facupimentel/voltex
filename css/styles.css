@@ -50,6 +50,8 @@ main .box-one .texto {
 }
 main .box-one .texto h1 {
   color: #A1EF00;
+  font-size: 26px;
+  margin: 15px 0px;
 }
 main .box-one .grid-img {
   display: grid;
@@ -171,14 +173,16 @@ footer .redes-foot h3 a {
 }
 .galeria .texto h6 {
   display: flex;
+  margin-top: 5px;
+  font-size: 15px;
 }
 .galeria .texto a {
   text-decoration: none;
   color: #242424;
 }
 .galeria .texto h1 {
-  font-size: 30px;
-  margin: 25px 0px 5px 0px;
+  font-size: 40px;
+  margin: 5px 0px 10px 0px;
 }
 .galeria .cards {
   display: flex;
@@ -273,23 +277,59 @@ footer .redes-foot h3 a {
   text-align: start;
   padding: 5px;
 }
+.remeras section .carrusel h1 {
+  font-size: 40px;
+  margin: 5px 0px 10px 0px;
+}
+.remeras section .carrusel h6 {
+  margin-top: 5px;
+  font-size: 15px;
+}
 .remeras section .carrusel a {
   text-decoration: none;
   color: #242424;
 }
-.remeras section .carrusel h1 {
-  font-size: 30px;
-  margin: 25px 0px 5px 0px;
-}
 .remeras section .info {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 30px 0px;
-  gap: 15px;
-}
-.remeras section .info p {
+  margin: 20px 10px;
+  gap: 20px;
   font-size: 20px;
+  text-align: center;
+}
+.remeras section .info .talles h2 {
+  font-size: 25px;
+}
+.remeras section .info .talles ul {
+  margin: 0px 0px 0px 5px;
+  padding: 0;
+  font-size: 20px;
+  list-style-type: none;
+}
+.remeras section .info .precios {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+.remeras section .info .precios p {
+  margin-bottom: 0;
+}
+.remeras section .info .precios a {
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px;
+  margin: 7px 0px;
+  border-radius: 15px;
+}
+.remeras section .info .precios a .btn {
+  background-color: #A1EF00;
+  color: #242424;
+}
+.remeras section .info .precios a:hover {
+  background-color: #94C530;
+  color: #242424;
+  border-radius: 15px;
 }
 
 /* MQ tablets */

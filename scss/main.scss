@@ -69,6 +69,8 @@ main {
 
       h1 {
         color: $color-secundario;
+        font-size: 26px;
+        margin: 15px 0px;
       }
     }
 
@@ -199,7 +201,7 @@ footer {
 //imports
 @import "html/galeria";
 @import "html/contactos";
-@import "html/products/remeras";
+@import "html/products/catalogo";
 
 /* MQ tablets */
 
