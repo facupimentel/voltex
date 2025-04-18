@@ -44,8 +44,6 @@ main .box-one .texto {
   margin: 40px 10px;
   border-radius: 3px;
   font-size: 17px;
-  background-color: #242424;
-  color: whitesmoke;
   padding: 15px;
 }
 main .box-one .texto h1 {
@@ -64,7 +62,6 @@ main .box-one .grid-img div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2px;
 }
 main .box-one .grid-img .img-uno {
   grid-column: 1;
@@ -97,9 +94,6 @@ main .links-pages .boxs {
 main .links-pages .boxs .card {
   width: 85%;
   margin: 5px 7px;
-  border-radius: 5px;
-  background-color: #242424;
-  color: whitesmoke;
 }
 main .links-pages .boxs .card .link-img img {
   margin: 5px 5px;
@@ -116,15 +110,15 @@ main .links-pages .boxs .card .link-text {
 }
 main .links-pages .boxs .card .link-text h2 {
   margin: 20px 0px;
-  font-size: 14px;
+  font-size: 25px;
 }
 main .links-pages .boxs .card .link-text a {
-  color: white;
   font-size: 15px;
   width: 60%;
   text-decoration: none;
   padding: 15px;
   margin: 7px 0px;
+  color: #242424;
 }
 main .links-pages .boxs .card .link-text a:hover {
   background-color: #A1EF00;
@@ -197,13 +191,15 @@ footer .redes-foot h3 a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #242424;
   color: whitesmoke;
 }
 .galeria .cards .card img {
-  border-radius: 5px;
   margin-top: 10px;
-  width: 90%;
+  width: 115%;
+}
+.galeria .cards .card h5 {
+  color: #242424;
+  font-size: 25px;
 }
 .galeria .cards .card a {
   background-color: #A1EF00;
@@ -212,7 +208,6 @@ footer .redes-foot h3 a {
   text-decoration: none;
   padding: 15px;
   margin: 7px 0px;
-  border-radius: 15px;
 }
 .galeria .cards .card a:hover {
   background-color: #94C530;
@@ -225,8 +220,9 @@ footer .redes-foot h3 a {
   margin: 20px 3px;
   border-radius: 3px;
   font-size: 19px;
-  background-color: #242424;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.contactos section .redes .texto h1 {
+  color: #A1EF00;
 }
 .contactos section .redes .logos {
   display: flex;

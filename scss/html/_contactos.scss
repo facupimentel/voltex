@@ -6,8 +6,11 @@
     section {
         .redes {
             @include estilos (20px 3px, 3px, 19px);
-            background-color:$color-principal ;
-            box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
+            .texto{
+                h1{
+                    color: $color-secundario;
+                }
+            }
             .logos {
                 display: flex;
                 margin: 13px 0px;
