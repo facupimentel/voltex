@@ -329,7 +329,7 @@ footer .redes-foot h3 a {
     width: 16%;
   }
   main .box-one .texto {
-    font-size: 15px;
+    font-size: 20px;
   }
   main .box-one .texto h1 {
     font-size: 45px;
@@ -368,115 +368,75 @@ footer .redes-foot h3 a {
   main .links-pages .boxs .card .link-text h2 {
     margin: 12px 0px;
     border-radius: 0px;
-    font-size: 15px;
+    font-size: 20px;
   }
   main .links-pages .boxs .card .link-text a {
     margin: 30px 0px;
     border-radius: 0px;
-    font-size: 15px;
+    font-size: 18px;
   }
   main .links-pages .boxs .card .link-text a:hover {
     border-radius: 15px;
   }
   footer {
-    height: 25vh;
+    height: 30vh;
   }
-  footer div a img {
-    padding-top: 10px;
-    width: 25%;
+  footer .logo-foot {
+    display: flex;
+    justify-content: center;
   }
-  footer div a {
-    padding: 5px 0px;
-    font-size: 13px;
+  footer .logo-foot img {
+    width: 60%;
   }
-  footer h3 {
-    font-size: 10px;
+  footer .redes-foot h6 {
+    font-size: 20px;
+  }
+  footer .redes-foot h3 {
+    font-size: 25px;
   }
   /* indumentaria */
   .galeria .texto {
-    margin: 40px 10px;
+    margin: 10px 5px;
     border-radius: 3px;
     font-size: 15px;
   }
-  .galeria .texto h1 {
-    color: #A1EF00;
-  }
-  .galeria .adidas .cuadro-uno {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 50%);
-  }
-  .galeria .adidas .cuadro-uno div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .galeria .adidas .cuadro-uno .cuadro-depaul {
-    display: block;
-  }
-  .galeria .adidas .cuadro-dos .dos-img-cinco {
-    display: none;
-  }
-  .galeria .nike .texto {
-    font-size: 15px;
-  }
-  .galeria .nike img {
-    width: 80%;
-  }
-  /* profesores */
-  main .texto {
-    margin: 40px 5px;
-    border-radius: 3px;
-    font-size: 15px;
-  }
-  main .texto h1 {
-    color: #A1EF00;
-  }
-  main .cbum .card-profe {
+  .galeria .cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 100px;
   }
-  main .cbum .card-profe img {
-    width: 30%;
-  }
-  main .canelo .card-profe {
+  /* catalogo */
+  .catalogo section {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 0px 130px 20px;
+  }
+  .catalogo section .carrusel {
+    width: 50%;
+    margin-left: 0px;
+    text-align: start;
+  }
+  .catalogo section .carrusel h6 a {
+    text-decoration: none;
+    color: #242424;
+  }
+  .catalogo section .info {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    gap: 100px;
   }
-  main .canelo .card-profe img {
-    width: 30%;
+  .catalogo section .info .talles ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    margin-left: 15px;
   }
-  main .canelo .fotos-canelo {
-    height: 80vh;
-    margin: 5px 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 34%);
-    gap: 2px;
-  }
-  main .canelo .fotos-canelo .canelo-uno {
-    grid-row: span 2;
-  }
-  main .canelo .fotos-canelo .canelo-tres {
-    grid-row: span 2;
-  }
-  /* rutinas */
-  main section .rutina-uno .texto {
-    font-size: 15px;
-  }
-  main section .rutina-uno .tabla-uno table .dias td {
-    font-size: 30px;
-  }
-  main section .rutina-uno .tabla-uno table tr td {
-    font-size: 22px;
-  }
-  main section .rutina-dos .tabla-dos table .dias td {
-    font-size: 30px;
-  }
-  main section .rutina-dos .tabla-dos table tr td {
-    font-size: 22px;
+  .catalogo section .info .precios {
+    font-size: 25px;
   }
   /* contactos */
   .contactos section .redes .logos {
@@ -484,13 +444,6 @@ footer .redes-foot h3 a {
   }
   .contactos section .redes .logos div a img {
     width: 30%;
-  }
-  .contactos .inscripcion .formulario {
-    padding: 25px;
-  }
-  .contactos .inscripcion .formulario h1 {
-    padding: 15px;
-    font-size: 30px;
   }
 }
 /* MQ desktop */
@@ -563,92 +516,35 @@ footer .redes-foot h3 a {
     object-fit: cover;
   }
   footer {
-    height: 40vh;
+    height: 45vh;
   }
-  footer div a {
-    width: 5%;
-    padding: 10px;
-  }
-  footer div a img {
-    width: 85%;
+  footer .logo-foot img {
+    width: 55%;
   }
   /* galeria */
-  .galeria .adidas .cuadro-uno {
+  .galeria {
     display: flex;
+    flex-direction: column;
   }
-  .galeria .adidas .cuadro-dos {
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 50%);
-  }
-  .galeria .adidas .cuadro-dos .dos-img-dos {
-    grid-column: span 1;
-  }
-  .galeria .adidas .cuadro-dos .dos-img-cinco {
-    display: block;
-    grid-column: 4;
-    grid-row: 1/3;
-  }
-  .galeria .nike .cuadro-tres {
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 50%);
-  }
-  .galeria .nike .cuadro-tres .tres-img-uno {
-    grid-row: span 2;
-  }
-  .galeria .nike .cuadro-tres .tres-img-dos {
-    grid-row: span 2;
-  }
-  .galeria .nike .cuadro-tres .tres-img-tres {
-    grid-row: span 2;
-  }
-  .galeria .nike .cuadro-tres .tres-img-cuatro {
-    grid-column: 4;
-    grid-row: span 2;
-  }
-  .galeria .nike .texto {
-    display: flex;
-    justify-content: center;
+  .galeria .cards {
     align-items: center;
+    margin-left: 30px;
+    width: 95%;
+    flex-wrap: nowrap;
   }
-  .galeria .nike .texto p {
-    padding: 15px;
-    font-size: 20px;
+  .catalogo section {
+    justify-content: space-evenly;
   }
-  /* profesores */
-  main .cbum .card-profe img {
-    width: 15%;
+  .catalogo section .carrusel {
+    width: 40%;
   }
-  main .cbum .fotos-cbum {
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%);
+  .catalogo section .info .precios {
+    font-size: 35px;
   }
-  main .canelo .card-profe img {
-    width: 15%;
-  }
-  main .canelo .fotos-canelo {
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%);
-  }
-  /* rutinas */
-  main .rutina-uno .tabla-uno table .dias td {
-    padding: 5px;
-  }
-  main .rutina-uno .tabla-uno table tr td {
-    padding: 10px;
-  }
-  main .rutina-dos .tabla-dos table .dias td {
-    padding: 10px;
-  }
-  main .rutina-dos .tabla-dos table tr td {
-    padding: 10px;
+  .catalogo section .info .precios a .btn {
+    padding: 20px;
+    background-color: #A1EF00;
+    color: #242424;
   }
   /* contactos */
   .contactos section {

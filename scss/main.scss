@@ -216,7 +216,7 @@ footer {
   main {
     .box-one {
       .texto {
-        font-size: 15px;
+        font-size: 20px;
 
         h1 {
           font-size: 45px;
@@ -247,7 +247,6 @@ footer {
         flex-direction: row;
         justify-content: center;
         margin: 0px 15px;
-
         .card {
           margin: 10px 10px;
           @include flex-column;
@@ -257,14 +256,14 @@ footer {
               margin: 12px;
             }
           }
-
+          
           .link-text {
             h2 {
-              @include estilos(12px 0px, 0px, 15px);
+              @include estilos(12px 0px, 0px, 20px);
             }
 
             a {
-              @include estilos(30px 0px, 0px, 15px);
+              @include estilos(30px 0px, 0px, 18px);
             }
             a:hover {
               border-radius: 15px;
@@ -276,25 +275,22 @@ footer {
   }
 
   footer {
-    height: 25vh;
-    div {
-      a {
-        img {
-          padding-top: 10px;
-          width: 25%;
-        }
+    height: 30vh;
+    .logo-foot{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 60%;
       }
     }
 
-    div {
-      a {
-        padding: 5px 0px;
-        font-size: 13px;
+    .redes-foot{
+      h6{
+        font-size: 20px;
       }
-    }
-
-    h3 {
-      font-size: 10px;
+      h3{
+        font-size: 25px;
+      }
     }
   }
 
@@ -302,135 +298,61 @@ footer {
 
   .galeria {
     .texto {
-      h1 {
-        color: $color-secundario;
-      }
-      @include estilos(40px 10px, 3px, 15px);
-    }
-    .adidas {
-      .cuadro-uno {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50%);
-
-        div {
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-        .cuadro-depaul {
-          display: block;
-        }
-      }
-
-      .cuadro-dos {
-        .dos-img-cinco {
-          display: none;
-        }
-      }
+      @include estilos(10px 5px, 3px, 15px);
     }
 
-    .nike {
-      .texto {
-        font-size: 15px;
-      }
-
-      img {
-        width: 80%;
-      }
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 100px;
     }
+
   }
 
-  /* profesores */
+  /* catalogo */
 
-  main {
-    .texto {
-      h1 {
-        color: $color-secundario;
-      }
-      @include estilos(40px 5px, 3px, 15px);
-    }
-    .cbum {
-      .card-profe {
-        @include flex-center;
-        img {
-          width: 30%;
+  .catalogo{
+    section{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin:30px 0px 130px 20px ;
+      .carrusel{
+        width: 50%;
+        h6{
+          a{
+            text-decoration: none;
+            color: #242424;
+          }
         }
-      }
-    }
-
-    .canelo {
-      .card-profe {
-        @include flex-center;
-        img {
-          width: 30%;
-        }
+        margin-left: 0px;
+        text-align: start;
       }
 
-      .fotos-canelo {
-        height: 80vh;
-        margin: 5px 5px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 34%);
-        gap: 2px;
-
-        .canelo-uno {
-          grid-row: span 2;
+      .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 100px;
+        .talles{
+          ul{
+            list-style-type: none;
+            font-size: 20px;
+            padding: 0;
+            margin-left: 15px;            
+          }
         }
-
-        .canelo-tres {
-          grid-row: span 2;
+        .precios{
+          font-size: 25px;
         }
       }
     }
   }
 
-  /* rutinas */
 
-  main {
-    section {
-      .rutina-uno {
-        .texto {
-          font-size: 15px;
-        }
-        .tabla-uno {
-          table {
-            .dias {
-              td {
-                font-size: 30px;
-              }
-            }
-
-            tr {
-              td {
-                font-size: 22px;
-              }
-            }
-          }
-        }
-      }
-      .rutina-dos {
-        .tabla-dos {
-          table {
-            .dias {
-              td {
-                font-size: 30px;
-              }
-            }
-
-            tr {
-              td {
-                font-size: 22px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  
 
   /* contactos */
   .contactos {
@@ -445,16 +367,6 @@ footer {
               }
             }
           }
-        }
-      }
-    }
-
-    .inscripcion {
-      .formulario {
-        padding: 25px;
-        h1 {
-          padding: 15px;
-          font-size: 30px;
         }
       }
     }
@@ -548,14 +460,10 @@ footer {
   }
 
   footer {
-    height: 40vh;
-    div {
-      a {
-        width: 5%;
-        padding: 10px;
-        img {
-          width: 85%;
-        }
+    height: 45vh;
+    .logo-foot{
+      img{
+        width: 55%;
       }
     }
   }
@@ -563,115 +471,38 @@ footer {
   /* galeria */
 
   .galeria {
-    .adidas {
-      .cuadro-uno {
-        display: flex;
-      }
-
-      .cuadro-dos {
-        @include grid;
-
-        .dos-img-dos {
-          grid-column: span 1;
-        }
-        .dos-img-cinco {
-          display: block;
-          grid-column: 4;
-          grid-row: 1 / 3;
-        }
-      }
-    }
-    .nike {
-      .cuadro-tres {
-        @include grid;
-        .tres-img-uno {
-          grid-row: span 2;
-        }
-        .tres-img-dos {
-          grid-row: span 2;
-        }
-        .tres-img-tres {
-          grid-row: span 2;
-        }
-        .tres-img-cuatro {
-          grid-column: 4;
-          grid-row: span 2;
-        }
-      }
-
-      .texto {
-        @include flex-center;
-        p {
-          padding: 15px;
-          font-size: 20px;
-        }
-      }
+    display: flex;
+    flex-direction: column;
+    .cards{
+      align-items: center;
+      margin-left: 30px;
+      width: 95%;
+      flex-wrap: nowrap;
     }
   }
 
-  /* profesores */
-
-  main {
-    .cbum {
-      .card-profe {
-        img {
-          width: 15%;
-        }
-      }
-      .fotos-cbum {
-        @include grid-profes;
-      }
-    }
-
-    .canelo {
-      .card-profe {
-        img {
-          width: 15%;
-        }
+  .catalogo{
+    section{
+      justify-content: space-evenly;
+      .carrusel{
+        width: 40%;
       }
 
-      .fotos-canelo {
-        @include grid-profes;
-      }
-    }
-  }
-
-  /* rutinas */
-
-  main {
-    .rutina-uno {
-      .tabla-uno {
-        table {
-          .dias {
-            td {
-              padding: 5px;
-            }
-          }
-          tr {
-            td {
-              padding: 10px;
-            }
-          }
-        }
-      }
-    }
-    .rutina-dos {
-      .tabla-dos {
-        table {
-          .dias {
-            td {
-              padding: 10px;
-            }
-          }
-          tr {
-            td {
-              padding: 10px;
+      .info{
+        .precios{
+          font-size: 35px;
+          a{
+            .btn{
+              padding: 20px;
+              background-color: $color-secundario;
+              color: $color-principal;
             }
           }
         }
       }
     }
   }
+
 
   /* contactos */
 
