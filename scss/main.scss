@@ -19,8 +19,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: 100;
+ 
 }
 
 //banner principal
@@ -124,7 +123,7 @@ main {
         .link-img {
           img {
             @include estilos(5px 5px, 5px, 0px);
-            width: 97%;
+            width: 100%;
           }
         }
         .link-text {
@@ -166,9 +165,9 @@ footer {
   align-items: center;  
   height: 40vh;
   .logo-foot{
-    width: 50;
+    width: 50%;
     img{
-      width: 90%;
+      width: 130%;
     }
   }
 

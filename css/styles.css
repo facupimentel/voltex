@@ -8,8 +8,6 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: 100;
 }
 
 header {
@@ -99,7 +97,7 @@ main .links-pages .boxs .card .link-img img {
   margin: 5px 5px;
   border-radius: 5px;
   font-size: 0px;
-  width: 97%;
+  width: 100%;
 }
 main .links-pages .boxs .card .link-text {
   display: flex;
@@ -135,10 +133,10 @@ footer {
   height: 40vh;
 }
 footer .logo-foot {
-  width: 50;
+  width: 50%;
 }
 footer .logo-foot img {
-  width: 90%;
+  width: 130%;
 }
 footer .redes-foot {
   display: flex;
@@ -212,7 +210,6 @@ footer .redes-foot h3 a {
 .galeria .cards .card a:hover {
   background-color: #94C530;
   color: #242424;
-  border-radius: 15px;
 }
 
 /* PAGE CONTACTOS */
@@ -288,19 +285,17 @@ footer .redes-foot h3 a {
 .remeras section .info {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 20px 10px;
   gap: 20px;
   font-size: 20px;
-  text-align: center;
 }
 .remeras section .info .talles h2 {
   font-size: 25px;
 }
 .remeras section .info .talles ul {
-  margin: 0px 0px 0px 5px;
+  margin: 10px 0px 0px 5px;
   padding: 0;
-  font-size: 20px;
+  font-size: 15px;
   list-style-type: none;
 }
 .remeras section .info .precios {
@@ -310,6 +305,7 @@ footer .redes-foot h3 a {
 }
 .remeras section .info .precios p {
   margin-bottom: 0;
+  font-size: 20px;
 }
 .remeras section .info .precios a {
   font-size: 15px;
@@ -321,11 +317,6 @@ footer .redes-foot h3 a {
 .remeras section .info .precios a .btn {
   background-color: #A1EF00;
   color: #242424;
-}
-.remeras section .info .precios a:hover {
-  background-color: #94C530;
-  color: #242424;
-  border-radius: 15px;
 }
 
 /* MQ tablets */
