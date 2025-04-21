@@ -1,11 +1,25 @@
 /* PAGE CONTACTOS */
 
 .contactos {
-    
+    .ruta{
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      padding: 5px;
+      h6 {
+        display: flex;
+        margin-top: 5px;
+        font-size: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: $color-principal;
+      }
+  }
     
     section {
         .redes {
-            @include estilos (20px 3px, 3px, 19px);
+            @include estilos (40px 3px, 3px, 19px);
             .texto{
                 h1{
                     color: $color-secundario;
@@ -13,49 +27,20 @@
             }
             .logos {
                 display: flex;
+                flex-direction: column;
+                align-items: center;
                 margin: 13px 0px;
-                div {
+                .redes {
                     a {
-                        img {
-                            width: 55%;
-                            padding-bottom: 40px;
-                        }     
+                        text-decoration: none;
+                     color: $color-principal;   
+                    }
+                    a:hover{
+                        color: $color-secundario;
                     }
                 }
             }
         }
     }
 
-    .inscripcion {
-        @include flex-center;
-        .formulario {
-            width: 98%;
-            align-content: center;
-            background-color: $color-principal;
-            color: $color-secundario;
-            padding: 25px;
-
-            h1 {
-                padding: 10px;
-                font-size: 20px;
-            }
-            
-            form {     
-                @include flex-column;  
-                justify-content: center;
-                .controles {
-                    @include estilos (15px 0px, 20px, 15px);      
-                    padding: 5px;
-                    background-color: #d4d4d4;                                   
-                }
-
-                .boton {
-                    padding: 10px;
-                    background-color:$color-secundario;                        
-                    border-radius: 10px;
-                    color: $color-principal;
-                }
-            }
-        }
-    }
 }

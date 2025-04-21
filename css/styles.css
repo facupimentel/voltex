@@ -151,6 +151,7 @@ footer .redes-foot h3 {
   font-size: 18px;
 }
 footer .redes-foot h3 a {
+  font-size: 20px;
   color: white;
   width: 40%;
   text-decoration: none;
@@ -213,8 +214,23 @@ footer .redes-foot h3 a {
 }
 
 /* PAGE CONTACTOS */
+.contactos .ruta {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 5px;
+}
+.contactos .ruta h6 {
+  display: flex;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.contactos .ruta a {
+  text-decoration: none;
+  color: #242424;
+}
 .contactos section .redes {
-  margin: 20px 3px;
+  margin: 40px 3px;
   border-radius: 3px;
   font-size: 19px;
 }
@@ -223,45 +239,16 @@ footer .redes-foot h3 a {
 }
 .contactos section .redes .logos {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 13px 0px;
 }
-.contactos section .redes .logos div a img {
-  width: 55%;
-  padding-bottom: 40px;
-}
-.contactos .inscripcion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contactos .inscripcion .formulario {
-  width: 98%;
-  align-content: center;
-  background-color: #242424;
-  color: #A1EF00;
-  padding: 25px;
-}
-.contactos .inscripcion .formulario h1 {
-  padding: 10px;
-  font-size: 20px;
-}
-.contactos .inscripcion .formulario form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contactos .inscripcion .formulario form .controles {
-  margin: 15px 0px;
-  border-radius: 20px;
-  font-size: 15px;
-  padding: 5px;
-  background-color: #d4d4d4;
-}
-.contactos .inscripcion .formulario form .boton {
-  padding: 10px;
-  background-color: #A1EF00;
-  border-radius: 10px;
+.contactos section .redes .logos .redes a {
+  text-decoration: none;
   color: #242424;
+}
+.contactos section .redes .logos .redes a:hover {
+  color: #A1EF00;
 }
 
 .catalogo section .carrusel {
@@ -379,7 +366,7 @@ footer .redes-foot h3 a {
     border-radius: 15px;
   }
   footer {
-    height: 30vh;
+    height: 25vh;
   }
   footer .logo-foot {
     display: flex;
@@ -411,10 +398,10 @@ footer .redes-foot h3 a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 30px 0px 130px 20px;
+    margin: 20px 0px 60px 20px;
   }
   .catalogo section .carrusel {
-    width: 50%;
+    width: 55%;
     margin-left: 0px;
     text-align: start;
   }
@@ -439,11 +426,21 @@ footer .redes-foot h3 a {
     font-size: 25px;
   }
   /* contactos */
+  .contactos section .redes {
+    margin: 20px 0px 100px 0px;
+  }
+  .contactos section .redes .texto {
+    font-size: 25px;
+    padding: 50px;
+  }
+  .contactos section .redes .texto p {
+    margin-top: 50px;
+  }
   .contactos section .redes .logos {
     display: flex;
-  }
-  .contactos section .redes .logos div a img {
-    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
   }
 }
 /* MQ desktop */
@@ -536,7 +533,7 @@ footer .redes-foot h3 a {
     justify-content: space-evenly;
   }
   .catalogo section .carrusel {
-    width: 40%;
+    width: 35%;
   }
   .catalogo section .info .precios {
     font-size: 35px;
@@ -552,27 +549,12 @@ footer .redes-foot h3 a {
     justify-content: center;
     align-items: center;
   }
-  .contactos section .redes {
-    width: 95%;
-  }
-  .contactos section .redes .logos div a img {
-    width: 15%;
-  }
-  .contactos .inscripcion {
+  .contactos section .redes .logos {
     display: flex;
+    justify-content: center;
   }
-  .contactos .inscripcion .formulario {
-    width: 65%;
-    margin: 20px 0px;
-    border-radius: 2px;
-    font-size: 15px;
-    padding: 25px;
-  }
-  .contactos .inscripcion .formulario h1 {
-    font-size: 20px;
-  }
-  .contactos .inscripcion .formulario form {
-    height: 90%;
+  .contactos section .redes .logos .redes {
+    width: 50%;
   }
 }
 
