@@ -24,16 +24,20 @@
       margin: 20px 10px;
       gap: 20px;
       font-size: 20px;
-      .talles{
-        h2{
-          font-size: 25px;
+      .stock {
+        text-align: start;
+        .talles{
+          h2{
+            font-size: 25px;
+          }
+          ul{
+            margin: 10px 0px 0px 5px ;
+            padding: 0;
+            font-size: 15px;
+            list-style-type: none;
+          }
         }
-        ul{
-          margin: 10px 0px 0px 5px ;
-          padding: 0;
-          font-size: 15px;
-          list-style-type: none;
-        }
+        
       }
 
       .precios{

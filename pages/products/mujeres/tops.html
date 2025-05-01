@@ -16,7 +16,7 @@
     />
 
     <!-- link de nuestro css -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../../../css/styles.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +27,7 @@
     />
     <link rel="shortcut icon" href="../img/header/logoicon.ico" />
 
-    <title>Voltex - Contactos</title>
+    <title>Voltex - Indumentaria</title>
   </head>
   <body>
     <!-- BARRA DE NAVEGACION -->
@@ -35,8 +35,8 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-navbar" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-logo" href="../index.html"
-            ><img src="../img/header/logo1.png" alt="logo de la academia"
+          <a class="navbar-logo" href="../../../index.html"
+            ><img src="../../../img/header/logo1.png" alt="logo de la academia"
           /></a>
           <button
             class="navbar-toggler"
@@ -58,7 +58,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../index.html"
+                  href="../../index.html"
                   >Inicio</a
                 >
               </li>
@@ -67,15 +67,15 @@
                   Indumentaria
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../../pages/hombres.html">Hombres</a></li>
-                  <li><a class="dropdown-item" href="#">Mujeres</a></li>
+                  <li><a class="dropdown-item" href="../../../pages/hombres.html">Hombres</a></li>
+                  <li><a class="dropdown-item" href="../../../pages/mujeres.html">Mujeres</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   aria-disabled="true"
-                  href="../pages/contactos.html"
+                  href="../../../pages/contactos.html"
                   >Contactos</a
                 >
               </li>
@@ -87,34 +87,84 @@
 
     <!-- CUERPO PRINCIPAL -->
 
-    <main class="contactos">
-      <div class="ruta">
-        <h6>
-          <a href="../../index.html">Inicio</a> /
-          <p>Contactos</p>
-        </h6>
-      </div>
-
+    <main class="catalogo">
       <section>
-        <article class="redes">
-          <div class="texto">
-            <h1>Contactate con Nosotros</h1>
-            <p>
-              Si tenes alguna duda, consulta o queres aportar a nuestro
-              crecimiento hacenoslo llegar por nuestras redes sociales.
-            </p>
-          </div>
-          <div class="logos">
-            <div class="redes">
-              <a href=""><h4>Instagram</h4></a>
-              <a href=""><h4>Whatsapp</h4></a>
-            </div>
+        
+        <div class="carrusel">
+          <h6>
+            <a href="../../../index.html">Inicio</a> /
+            Idumentaria / <a href="../../mujeres.html">Mujeres</a> / Tops
+          </h6>
+          <h1>TOPS</h1>
 
-            <div class="logo">
-              <img src="../img/logotipos/5.png" alt="" />
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../../../img/galeria/mujeres/tops/amarillo-rosa-fluor.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../img/galeria/mujeres/tops/celeste-marron.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../img/galeria/mujeres/tops/blanco-azul.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-        </article>
+        </div>
+
+        <div class="info">
+          <div class="talles">
+            <h2>Talles:</h2>
+            <ul>
+              <li>Unico hasta XL</li>
+            </ul>
+            <p>Los modelos mostrados son los disponibles</p>
+          </div>
+          <div class="precios">
+            <p>$7.000</p>
+            <a href="https://wa.me/3813203241"
+              ><button type="button" class="btn btn-primary">
+                Consultar Catalogo
+              </button></a
+            >
+          </div>
+        </div>
       </section>
     </main>
 

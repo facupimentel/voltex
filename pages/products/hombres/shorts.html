@@ -16,7 +16,7 @@
     />
 
     <!-- link de nuestro css -->
-    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../../css/styles.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,8 +35,8 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-navbar" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-logo" href="../../index.html"
-            ><img src="../../img/header/logo1.png" alt="logo de la academia"
+          <a class="navbar-logo" href="../../../index.html"
+            ><img src="../../../img/header/logo1.png" alt="logo de la academia"
           /></a>
           <button
             class="navbar-toggler"
@@ -58,14 +58,18 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../../index.html"
+                  href="../../../index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/galeria.html"
-                  >Indumentaria</a
-                >
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Indumentaria
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../../../pages/hombres.html">Hombres</a></li>
+                  <li><a class="dropdown-item" href="../../../pages/mujeres.html">Mujeres</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
@@ -84,22 +88,44 @@
     <!-- CUERPO PRINCIPAL -->
 
     <main class="catalogo">
-      <section >
+      <section>
         <div class="carrusel">
-          <h6><a href="../../index.html">Inicio</a> / <a href="../../pages/galeria.html">Indumentaria</a> / Combos</h6>
-          <h1>COMBOS</h1>
-
   
+          <h6>
+            <a href="../../../index.html">Inicio</a> /
+            Idumentaria / <a href="../../hombres.html">Hombres</a> / Shorts
+          </h6>
+          <h1>SHORTS</h1>
+          
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../../img/galeria/combo/umbro-oscura.jpg" class="d-block w-100" alt="..." />
+                <img
+                  src="../../../img/galeria/hombres/shorts/shorts.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
               <div class="carousel-item">
-                <img src="../../img/galeria/combo/umbro-bordo.jpg" class="d-block w-100" alt="..." />
+                <img
+                  src="../../../img/galeria/hombres/shorts/adidas-gris.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
               <div class="carousel-item">
-                <img src="../../img/galeria/combo/duo-dinamico.jpg" class="d-block w-100" alt="..." />
+                <img
+                  src="../../../img/galeria/hombres/shorts/under-negro.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../img/galeria/hombres/shorts/shorts2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
             </div>
             <button
@@ -108,7 +134,10 @@
               data-bs-target="#carouselExample"
               data-bs-slide="prev"
             >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button
@@ -117,7 +146,10 @@
               data-bs-target="#carouselExample"
               data-bs-slide="next"
             >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -125,15 +157,16 @@
 
         <div class="info">
           <div class="talles">
-            <h2>Combos dispobibles:</h2>
+            <h2>Talles disponibles:</h2>
             <ul>
-              <li>Remera + Short</li>
-              <li>Medias x3</li>
-              <li>Short + Medias</li>
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
             </ul>
+            <p>Los modelos mostrados son los disponibles</p>
           </div>
           <div class="precios">
-            <p>Consulta tu Combo</p>
+            <p>13.5mil - 16mil</p>
             <a href="https://wa.me/3813203241"
               ><button type="button" class="btn btn-primary">
                 Consultar Catalogo
@@ -141,7 +174,6 @@
             >
           </div>
         </div>
-
       </section>
     </main>
 
@@ -172,6 +204,7 @@
         </h3>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

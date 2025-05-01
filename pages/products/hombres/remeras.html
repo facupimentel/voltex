@@ -16,7 +16,7 @@
     />
 
     <!-- link de nuestro css -->
-    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../../css/styles.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +36,7 @@
       <nav class="navbar navbar-expand-lg bg-navbar" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-logo" href="../../index.html"
-            ><img src="../../img/header/logo1.png" alt="logo de la academia"
+            ><img src="../../../img/header/logo1.png" alt="logo de la academia"
           /></a>
           <button
             class="navbar-toggler"
@@ -62,16 +62,20 @@
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/galeria.html"
-                  >Indumentaria</a
-                >
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Indumentaria
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../../../pages/hombres.html">Hombres</a></li>
+                  <li><a class="dropdown-item" href="../../../pages/mujeres.html">Mujeres</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   aria-disabled="true"
-                  href="../../pages/contactos.html"
+                  href="../../../pages/contactos.html"
                   >Contactos</a
                 >
               </li>
@@ -88,8 +92,8 @@
         
         <div class="carrusel">
           <h6>
-            <a href="../../index.html">Inicio</a> /
-            <a href="../../pages/galeria.html">Indumentaria</a> / Remeras
+            <a href="../../../index.html">Inicio</a> /
+            Idumentaria / <a href="../../hombres.html">Hombres</a> / Remeras
           </h6>
           <h1>REMERAS</h1>
 
@@ -97,21 +101,21 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="../../img/galeria/remeras/remeras.jpg"
+                  src="../../../img/galeria/hombres/remeras/remeras.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="../../img/galeria/remeras/nike-gris.jpg"
+                  src="../../../img/galeria/hombres/remeras/nike-gris.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="../../img/galeria/remeras/nike-blanca.jpg"
+                  src="../../../img/galeria/hombres/remeras/nike-blanca.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -145,16 +149,18 @@
         </div>
 
         <div class="info">
-          <div class="talles">
-            <h2>Talles disponibles:</h2>
-            <ul>
-              <li>S</li>
-              <li>M</li>
-              <li>L</li>
-            </ul>
-          </div>
+            <div class="talles">
+              <h2>Talles:</h2>
+              <ul>
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+              </ul>
+              <p>Los modelos mostrados son los disponibles</p>
+            </div>
+
           <div class="precios">
-            <p>15mil - 17.5mil</p>
+            <p>$15.000 - $17.500</p>
             <a href="https://wa.me/3813203241"
               ><button type="button" class="btn btn-primary">
                 Consultar Catalogo

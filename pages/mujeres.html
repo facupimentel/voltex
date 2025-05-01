@@ -16,7 +16,7 @@
     />
 
     <!-- link de nuestro css -->
-    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,8 +35,8 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-navbar" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-logo" href="../../index.html"
-            ><img src="../../img/header/logo1.png" alt="logo de la academia"
+          <a class="navbar-logo" href="../index.html"
+            ><img src="../img/header/logo1.png" alt="logo de la academia"
           /></a>
           <button
             class="navbar-toggler"
@@ -58,20 +58,24 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../../index.html"
+                  href="../index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/galeria.html"
-                  >Indumentaria</a
-                >
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Indumentaria
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../pages/hombres.html">Hombres</a></li>
+                  <li><a class="dropdown-item" href="#">Mujeres</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   aria-disabled="true"
-                  href="../../pages/contactos.html"
+                  href="../pages/contactos.html"
                   >Contactos</a
                 >
               </li>
@@ -83,89 +87,61 @@
 
     <!-- CUERPO PRINCIPAL -->
 
-    <main class="catalogo">
-      <section>
-        <div class="carrusel">
-  
-          <h6>
-            <a href="../../index.html">Inicio</a> /
-            <a href="../../pages/galeria.html">Indumentaria</a> / Shorts
-          </h6>
-          <h1>SHORTS</h1>
-          
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="../../img/galeria/shorts/shorts.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../../img/galeria/shorts/adidas-gris.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../../img/galeria/shorts/under-negro.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../../img/galeria/shorts/shorts2.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
+    <main class="galeria">
+      <div class="texto">
+        <h6><a href="../../index.html">Inicio</a> / Indumentaria / Mujeres</h6>
+        <h1>MUJERES</h1>
+      </div>
+
+      <section class="cards">
+        <div class="card border-0" style="width: 18rem">
+          <img src="../img//galeria/mujeres/tops/portada.jpg" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Tops</h5>
+            <a href="./products/mujeres/tops.html" class="btn btn-primary"
+              >Consultar Catalogo</a
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
 
-        <div class="info">
-          <div class="talles">
-            <h2>Talles disponibles:</h2>
-            <ul>
-              <li>S</li>
-              <li>M</li>
-              <li>L</li>
-            </ul>
+        <div class="card border-0"  style="width: 18rem">
+          <img
+            src="../img/galeria/mujeres/calzas/celeste2.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Calzas</h5>
+            <a href="./products/mujeres/calzas.html" class="btn btn-primary"
+              >Consultar Catalogo</a
+            >
           </div>
-          <div class="precios">
-            <p>13.5mil - 16mil</p>
-            <a href="https://wa.me/3813203241"
-              ><button type="button" class="btn btn-primary">
-                Consultar Catalogo
-              </button></a
+        </div>
+
+        <div class="card border-0"  style="width: 18rem">
+          <img
+            src="../img/galeria/hombres/medias/blancas.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Medias</h5>
+            <a href="./products/mujeres/medias.html" class="btn btn-primary"
+              >Consultar Catalogo</a
+            >
+          </div>
+        </div>
+
+        <div class="card border-0"  style="width: 18rem">
+          <img
+            src="../img/galeria/mujeres/conjuntos/portada.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Conjuntos</h5>
+            <a href="./products/mujeres/conjuntos.html" class="btn btn-primary"
+              >Consultar Catalogo</a
             >
           </div>
         </div>
@@ -176,7 +152,7 @@
 
     <footer>
       <div class="logo-foot">
-        <img src="../../img/logotipos/3.png" alt="" />
+        <img src="../img/logotipos/3.png" alt="" />
       </div>
 
       <div class="redes-foot">
@@ -185,7 +161,7 @@
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.instagram.com/facundopimentel_/"
+            href="https://www.instagram.com/voltexgimnasio/"
             >Instagram</a
           >
         </h3>

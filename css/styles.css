@@ -27,6 +27,13 @@ header .bg-navbar .container-fluid .nav-menu .navbar-nav {
   margin: 0px 20px;
   gap: 15px;
 }
+header .bg-navbar .container-fluid .nav-menu .navbar-nav .nav-item .dropdown-menu {
+  background-color: #242424;
+}
+header .bg-navbar .container-fluid .nav-menu .navbar-nav .nav-item .dropdown-menu a:hover {
+  background-color: #A1EF00;
+  color: #242424;
+}
 header .bg-navbar .container-fluid .navbar-logo {
   width: 80%;
 }
@@ -87,6 +94,7 @@ main .links-pages {
 main .links-pages .boxs {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 main .links-pages .boxs .card {
@@ -112,7 +120,6 @@ main .links-pages .boxs .card .link-text h2 {
 }
 main .links-pages .boxs .card .link-text a {
   font-size: 15px;
-  width: 60%;
   text-decoration: none;
   padding: 15px;
   margin: 7px 0px;
@@ -122,6 +129,24 @@ main .links-pages .boxs .card .link-text a:hover {
   background-color: #A1EF00;
   color: #242424;
   border-radius: 15px;
+}
+main .links-pages .boxs .card .link-text .nav-item {
+  list-style-type: none;
+}
+main .links-pages .boxs .card .link-text .nav-item a {
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px;
+  margin: 7px 0px;
+  color: #242424;
+}
+main .links-pages .boxs .card .link-text .nav-item a:hover {
+  background-color: #A1EF00;
+  color: #242424;
+  border-radius: 15px;
+}
+main .links-pages .boxs .card .link-text .nav-item ul {
+  list-style-type: none;
 }
 
 /* PIE DE PAGINA*/
@@ -276,10 +301,13 @@ footer .redes-foot h3 a {
   gap: 20px;
   font-size: 20px;
 }
-.catalogo section .info .talles h2 {
+.catalogo section .info .stock {
+  text-align: start;
+}
+.catalogo section .info .stock .talles h2 {
   font-size: 25px;
 }
-.catalogo section .info .talles ul {
+.catalogo section .info .stock .talles ul {
   margin: 10px 0px 0px 5px;
   padding: 0;
   font-size: 15px;
@@ -358,7 +386,7 @@ footer .redes-foot h3 a {
     font-size: 20px;
   }
   main .links-pages .boxs .card .link-text a {
-    margin: 30px 0px;
+    margin: 5px 0px;
     border-radius: 0px;
     font-size: 18px;
   }
@@ -504,6 +532,7 @@ footer .redes-foot h3 a {
   main .links-pages .boxs {
     width: 100%;
     gap: 60px;
+    align-items: baseline;
   }
   main .links-pages .boxs .card {
     width: 30%;
