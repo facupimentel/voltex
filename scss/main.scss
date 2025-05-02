@@ -510,7 +510,7 @@ footer {
     display: flex;
     flex-direction: column;
     .cards{
-      align-items: center;
+      align-items: baseline;
       margin-left: 30px;
       width: 95%;
       flex-wrap: nowrap;

@@ -553,7 +553,7 @@ footer .redes-foot h3 a {
     flex-direction: column;
   }
   .galeria .cards {
-    align-items: center;
+    align-items: baseline;
     margin-left: 30px;
     width: 95%;
     flex-wrap: nowrap;
